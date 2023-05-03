@@ -18,15 +18,13 @@ import { selectGenreOrCategory } from "../../features/currentGenreOrCategory"; /
 import "./style.css";
 
 import genreIcons from "../../assets/genres"; // OR  ../../assets/genres/index
+import Logo from "../../assets/Logo";
 
 const categories = [
   { label: "Popular", value: "popular" },
   { label: "Top Rated", value: "top_rated" },
   { label: "Upcoming", value: "upcoming" },
 ];
-
-const blueLogo =
-  "https://fontmeme.com/permalink/210930/8531c658a743debe1e1aa1a2fc82006e.png";
 
 const Sidebar = ({ theme, setMobileOpen }) => {
   const { genreIdOrCategoryName } = useSelector(
@@ -43,16 +41,12 @@ const Sidebar = ({ theme, setMobileOpen }) => {
   const genreImage = {
     filter: theme.palette.mode === "dark" && "invert(1)",
   };
+  const color = theme.palette.primary.dark;
 
   return (
     <>
-      <Link to="/" className="imageLink">
-        <img
-          className="logo_image"
-          src={blueLogo}
-          // src={theme.palette.mode === 'light' ? blueLogo : redLogo}
-          alt="logo"
-        />
+      <Link to="/" className="logo_container">
+        <Logo color={color} />
       </Link>
       <Divider />
       <List>

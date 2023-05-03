@@ -121,7 +121,7 @@ const NavBar = ({ theme }) => {
           {isMobile ? (
             <Drawer
               variant="temporary"
-              anchor="right"
+              anchor="left"
               open={mobileOpen}
               className="drawer__paper"
               ModalProps={{ keepMounted: true }} // Better open performance on mobile.

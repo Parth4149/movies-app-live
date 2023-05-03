@@ -4,10 +4,12 @@
   padding: 10% 0;
   width: 100%;
 }
-.logo_image {
+.logo_container {
   max-width: 240px;
-  width: 70%;
+  text-align: center;
+  padding: .5rem 0;
 }
-.sidebar__links {
-
+.logo_style {
+  width: 40px;
+  height: 40px;
 }
