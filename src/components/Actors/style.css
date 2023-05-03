@@ -1,0 +1,6 @@
+.image {
+  max-width: 90%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 4px 6px 14px hsla(0, 2%, 22%, 0.707);
+}

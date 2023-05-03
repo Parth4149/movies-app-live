@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  margin: 30px 2px !important;
+}
+.page__number {
+  margin: 0 20px !important;
+}

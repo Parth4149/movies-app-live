@@ -1,0 +1,11 @@
+.movies__container {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .movies__container {
+    justify-content: center;
+  }
+}

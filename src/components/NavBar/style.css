@@ -1,0 +1,29 @@
+:root {
+  --drawer__width: 240px;
+}
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  height: 70px;
+  margin-left: 240px;
+}
+.drawer__paper {
+  width: var(--drawer__width);
+}
+.link__button:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .toolbar {
+    margin-left: 0;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 600px) {
+  .drawer {
+    width: var(--drawer__width);
+    flex-shrink: 0;
+  }
+}

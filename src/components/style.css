@@ -1,0 +1,12 @@
+.root {
+  display: flex;
+  height: 100%;
+}
+.content {
+  flex-grow: 1;
+  /* margin-left: 240px; */
+  padding: 6em 2em 2em;
+}
+.toolkit {
+  height: 70px;
+}

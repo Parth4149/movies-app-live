@@ -1,0 +1,42 @@
+.featuredCard__container {
+  display: flex;
+  justify-content: center;
+  height: 30rem;
+  margin-bottom: 1.25rem;
+  text-decoration: none;
+  margin-left: -1rem;
+}
+/* Parent */
+.card {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  position: relative;
+}
+/* Child */
+.card__media {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.575);
+}
+
+/* Child */
+.card__content {
+  position: relative;
+  color: hsl(0, 0%, 98%);
+  width: 40%;
+  background: transparent;
+  top: 1rem;
+}
+@media screen and (max-width: 600px) {
+  .featuredCard__container {
+    margin: 0 -1rem;
+  }
+  .card__content {
+    width: 100% ;
+  }
+}

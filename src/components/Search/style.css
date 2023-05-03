@@ -1,0 +1,18 @@
+.searchContainer {
+}
+
+@media screen and (max-width: 600px) {
+  .searchContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+.castImage {
+  width: 100%;
+  max-width: 7em;
+  height: 8em;
+  object-fit: cover;
+  border-radius: 10px;
+}

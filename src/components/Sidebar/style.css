@@ -1,0 +1,13 @@
+.imageLink {
+  display: flex;
+  justify-content: center;
+  padding: 10% 0;
+  width: 100%;
+}
+.logo_image {
+  max-width: 240px;
+  width: 70%;
+}
+.sidebar__links {
+
+}
