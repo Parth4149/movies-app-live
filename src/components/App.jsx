@@ -13,7 +13,7 @@ const App = () => {
       <NavBar theme={theme} />
       <main className="content">
         <Routes>
-          <Route path="/" element={<Movies theme={theme} />} />
+          <Route path="/movies-app-live/" element={<Movies theme={theme} />} />
           <Route path="/approved" element={<Movies theme={theme} />} />
           <Route
             path="/movie/:id"
