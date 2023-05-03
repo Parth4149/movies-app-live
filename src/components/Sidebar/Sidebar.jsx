@@ -53,7 +53,7 @@ const Sidebar = ({ theme, setMobileOpen }) => {
         <ListSubheader>Categories</ListSubheader>
         {categories.map(({ label, value }) => (
           <Link
-            to="/"
+            to="/movies-app-live/"
             key={value}
             style={{ color: theme.palette.text.primary }}
           >
@@ -82,7 +82,7 @@ const Sidebar = ({ theme, setMobileOpen }) => {
           </Box>
         ) : (
           data?.genres.map(({ name, id }) => (
-            <Link to="/" key={id} style={{ color: theme.palette.text.primary }}>
+            <Link to="/movies-app-live/" key={id} style={{ color: theme.palette.text.primary }}>
               <ListItemButton
                 onClick={() => dispatch(selectGenreOrCategory(id))}
               >
