@@ -126,7 +126,7 @@ const MovieInformation = ({ theme }) => {
   if (error) {
     return (
       <Box display="flex" justifyContent="center">
-        <Link to="/">Something has gone wrong - Go back</Link>
+        <Link to="/movies-app-live/">Something has gone wrong - Go back</Link>
       </Box>
     );
   }
@@ -164,7 +164,7 @@ const MovieInformation = ({ theme }) => {
           {data?.genres.map((genre) => (
             <Link
               key={genre.id}
-              to="/"
+              to="/movies-app-live/"
               className="genre__icons"
               onClick={() => dispatch(selectGenreOrCategory(genre.id))}
             >
@@ -271,7 +271,7 @@ const MovieInformation = ({ theme }) => {
                 >
                   <Typography
                     component={Link}
-                    to="/"
+                    to="/movies-app-live/"
                     color="inherit"
                     variant="subtitle2"
                     sx={{ textDecoration: "none" }}

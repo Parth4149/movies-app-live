@@ -45,7 +45,7 @@ const Sidebar = ({ theme, setMobileOpen }) => {
 
   return (
     <>
-      <Link to="/" className="logo_container">
+      <Link to="/movies-app-live/" className="logo_container">
         <Logo color={color} />
       </Link>
       <Divider />
