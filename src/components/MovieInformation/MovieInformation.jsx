@@ -19,7 +19,7 @@ import {
   ArrowBack,
   FavoriteBorderOutlined,
 } from "@mui/icons-material";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
 
@@ -36,6 +36,7 @@ import { MovieList } from "..";
 
 const MovieInformation = ({ theme }) => {
   const api_key = "452c75a83b35c60555caa1acf0c698ce";
+  const navigate = useNavigate();
   const { id } = useParams();
   const { user } = useSelector((state) => state.user);
   const { data, isFetching, error } = useGetMovieQuery(id);
@@ -271,7 +272,7 @@ const MovieInformation = ({ theme }) => {
                 >
                   <Typography
                     component={Link}
-                    to="/movies-app-live/"
+                    onClick={() => navigate(-1)}
                     color="inherit"
                     variant="subtitle2"
                     sx={{ textDecoration: "none" }}
